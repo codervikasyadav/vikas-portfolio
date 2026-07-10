@@ -11,7 +11,11 @@ module.exports = async (req, res) => {
     return res.status(400).json({ error: 'Name, email, and message are required.' });
   }
 
-  const apiKey = 're_cDFACNJt_GD2TgQKLPSvnFWpbYa8D85iq';
+  const apiKey = process.env.RESEND_API_KEY;
+
+  if (!apiKey) {
+    return res.status(500).json({ error: 'Resend API configuration error. Please check environment variables.' });
+  }
 
   try {
     const response = await fetch('https://api.resend.com/emails', {
