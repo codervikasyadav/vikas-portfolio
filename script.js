@@ -107,22 +107,50 @@ filterBtns.forEach(btn => {
     });
   });
 });
-
 // ===== CONTACT FORM HANDLER =====
-function handleFormSubmit(e) {
+async function handleFormSubmit(e) {
   e.preventDefault();
   const btn = e.target.querySelector('.btn-bento-submit');
   const originalText = btn.innerHTML;
-  btn.innerHTML = '<i class="fas fa-check"></i> Message Dispatched!';
-  btn.style.background = 'linear-gradient(135deg, #10b981, #059669)';
+  
+  const name = e.target.querySelector('#name').value;
+  const email = e.target.querySelector('#email').value;
+  const message = e.target.querySelector('#message').value;
+
+  btn.disabled = true;
+  btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+
+  try {
+    const response = await fetch('/api/send', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ name, email, message })
+    });
+
+    if (response.ok) {
+      btn.innerHTML = '<i class="fas fa-check"></i> Sent Successfully!';
+      btn.style.background = 'linear-gradient(135deg, #10b981, #059669)';
+      e.target.reset();
+    } else {
+      const errorData = await response.json();
+      btn.innerHTML = '<i class="fas fa-exclamation-triangle"></i> Failed!';
+      btn.style.background = 'linear-gradient(135deg, #ef4444, #dc2626)';
+      console.error('Error sending message:', errorData.error);
+    }
+  } catch (error) {
+    btn.innerHTML = '<i class="fas fa-exclamation-triangle"></i> Error!';
+    btn.style.background = 'linear-gradient(135deg, #ef4444, #dc2626)';
+    console.error('Network error:', error);
+  }
   
   setTimeout(() => {
+    btn.disabled = false;
     btn.innerHTML = originalText;
     btn.style.background = '';
-    e.target.reset();
-  }, 3000);
+  }, 4000);
 }
-
 // ===== SMOOTH SCROLL FOR ANCHOR LINKS =====
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
