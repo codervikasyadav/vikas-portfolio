@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vikas Yadav — Full Stack Developer & Software Engineer</title>
+  <meta name="description" content="Portfolio of Vikas Yadav, a detail-oriented Computer Science Engineer with experience in Full Stack and Backend Development, RESTful API design, and IoT-based system architecture.">
+  <meta property="og:title" content="Vikas Yadav — Full Stack Developer Portfolio">
+  <meta property="og:description" content="Full Stack Developer specializing in Java, Spring Boot, React.js, and IoT Systems.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Overlays -->
+  <div class="bg-radial"></div>
+  <div class="bg-grid"></div>
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">Vikas Yadav</a>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact" class="nav-cta">Let's Talk</a>
+      </div>
+      <div class="mobile-toggle" id="mobileToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== BENTO WRAPPER ===== -->
+  <div class="bento-wrapper">
+
+    <!-- HERO GRID -->
+    <div class="bento-grid-hero" id="about">
+      
+      <!-- Intro Bento Card -->
+      <div class="bento-card card-intro">
+        <div>
+          <div class="intro-badge">
+            <span class="dot"></span> Open to Roles
+          </div>
+          <h1>Crafting Scalable<br><span>Web Applications</span> & IoT</h1>
+          <p>
+            Detail-oriented Computer Science Graduate & PG-DAC student specializing in Java Spring Boot backend frameworks, React/Next.js frontend systems, and IoT communication.
+          </p>
+        </div>
+        <div class="intro-actions">
+          <a href="#projects" class="btn-bento-primary">
+            <i class="fas fa-arrow-right"></i> Explore Projects
+          </a>
+          <a href="#contact" class="btn-bento-secondary">
+            <i class="fas fa-envelope"></i> Contact Me
+          </a>
+        </div>
+      </div>
+
+      <!-- Profile Bento Card -->
+      <div class="bento-card card-profile">
+        <div class="avatar-wrapper">
+          <img src="https://avatars.githubusercontent.com/u/113962771?v=4" alt="Vikas Yadav" class="avatar-image">
+          <div class="avatar-glow"></div>
+        </div>
+        <h2 class="profile-name">Vikas Yadav</h2>
+        <div class="profile-title">Software Engineer</div>
+        <div class="profile-location">
+          <i class="fas fa-map-marker-alt"></i> Noida, Uttar Pradesh, India
+        </div>
+        <div class="profile-socials">
+          <a href="https://github.com/codervikasyadav" target="_blank" class="social-circle" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/codervikasyadav/" target="_blank" class="social-circle" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://twitter.com/vikasyadav9111" target="_blank" class="social-circle" aria-label="Twitter">
+            <i class="fab fa-x-twitter"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- STATS GRID -->
+    <div class="bento-grid-stats">
+      
+      <!-- Stat 1 -->
+      <div class="bento-card card-stat">
+        <div class="stat-number">26</div>
+        <div class="stat-label">GitHub Repos</div>
+        <div class="stat-description">Made fully public</div>
+      </div>
+
+      <!-- Stat 2 -->
+      <div class="bento-card card-stat">
+        <div class="stat-number">15</div>
+        <div class="stat-label">Live Sites</div>
+        <div class="stat-description">Hosted on Vercel</div>
+      </div>
+
+      <!-- Stat 3 -->
+      <div class="bento-card card-stat">
+        <div class="stat-number">2</div>
+        <div class="stat-label">Internships</div>
+        <div class="stat-description">Software & IT Roles</div>
+      </div>
+
+      <!-- Resume CTA Card -->
+      <div class="bento-card card-cta-resume">
+        <div class="resume-icon">
+          <i class="fas fa-file-pdf"></i>
+        </div>
+        <div class="resume-details">
+          <h3>Vikas Yadav Resume</h3>
+          <p>Full-Stack / Frontend Developer CV.</p>
+          <div style="margin-top: 12px; display: flex; gap: 8px;">
+            <a href="Vikas_Yadav_Resume.pdf" download="Vikas_Yadav_Resume.pdf" class="btn-bento-primary" style="padding: 6px 14px; font-size: 0.75rem;">
+              <i class="fas fa-download"></i> Download Resume
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- SKILLS GRID -->
+    <div class="bento-grid-skills" id="skills">
+      
+      <!-- Skills Categories -->
+      <div class="bento-card card-skills-overview">
+        <div class="card-title-bento">
+          <i class="fas fa-cubes"></i> Core Skillset
+        </div>
+        <div class="skills-bento-grid">
+          
+          <div class="skill-bento-item">
+            <div class="skill-bento-icon">💻</div>
+            <div class="skill-bento-name">Backend Development</div>
+            <div class="skill-bento-desc">Spring Boot, Hibernate, REST APIs, Java Architecture</div>
+          </div>
+
+          <div class="skill-bento-item">
+            <div class="skill-bento-icon">🎨</div>
+            <div class="skill-bento-name">Frontend Architecture</div>
+            <div class="skill-bento-desc">React.js, Next.js, TypeScript, Tailored CSS</div>
+          </div>
+
+          <div class="skill-bento-item">
+            <div class="skill-bento-icon">💾</div>
+            <div class="skill-bento-name">Database Systems</div>
+            <div class="skill-bento-desc">MySQL, Relational Query Tuning, DBMS</div>
+          </div>
+
+          <div class="skill-bento-item">
+            <div class="skill-bento-icon">📡</div>
+            <div class="skill-bento-name">IoT & Hardware Integrations</div>
+            <div class="skill-bento-desc">PoS integrations, Node controllers, Smart systems</div>
+          </div>
+
+          <div class="skill-bento-item">
+            <div class="skill-bento-icon">⚙️</div>
+            <div class="skill-bento-name">DevOps & Tools</div>
+            <div class="skill-bento-desc">Docker, Git version control, Vercel deployments</div>
+          </div>
+
+          <div class="skill-bento-item">
+            <div class="skill-bento-icon">🤖</div>
+            <div class="skill-bento-name">AI Prompt Engineering</div>
+            <div class="skill-bento-desc">Workflow optimization with ChatGPT, Gemini, Claude</div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Quick Arsenal list -->
+      <div class="bento-card card-skills-arsenal">
+        <div class="card-title-bento">
+          <i class="fas fa-list-check"></i> HR Quick Check
+        </div>
+        <div class="arsenal-list">
+          <div class="arsenal-item">
+            <span><i class="fab fa-java"></i> Java Core</span>
+            <div class="arsenal-level">Expert</div>
+          </div>
+          <div class="arsenal-item">
+            <span><i class="fas fa-seedling"></i> Spring Boot</span>
+            <div class="arsenal-level">Advanced</div>
+          </div>
+          <div class="arsenal-item">
+            <span><i class="fab fa-react"></i> React.js</span>
+            <div class="arsenal-level">Advanced</div>
+          </div>
+          <div class="arsenal-item">
+            <span><i class="fas fa-database"></i> MySQL</span>
+            <div class="arsenal-level">Intermediate</div>
+          </div>
+          <div class="arsenal-item">
+            <span><i class="fab fa-docker"></i> Docker</span>
+            <div class="arsenal-level">Intermediate</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- TIMELINE & JOURNEY GRID -->
+    <div class="bento-grid-journey" id="experience">
+      
+      <!-- Experience Column -->
+      <div class="bento-card card-experience">
+        <div class="card-title-bento">
+          <i class="fas fa-briefcase"></i> Work Experience
+        </div>
+        <div class="timeline-bento">
+          <div class="timeline-bento-item">
+            <div class="timeline-bento-dot"></div>
+            <div class="timeline-bento-date">Mar 2025 — Sep 2025</div>
+            <div class="timeline-bento-title">Assistant Software Engineer Intern</div>
+            <div class="timeline-bento-subtitle">Navbharat Niwas Pvt. Ltd.</div>
+            <ul class="timeline-bento-desc">
+              <li>Prepared and maintained technical documentation & specifications.</li>
+              <li>Reviewed systems for clarity, consistency, and alignment.</li>
+              <li>Collaborated with teams to deliver structured feedback reviews.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Education Column -->
+      <div class="bento-card card-education">
+        <div class="card-title-bento">
+          <i class="fas fa-graduation-cap"></i> Education
+        </div>
+        <div class="timeline-bento">
+          <div class="timeline-bento-item">
+            <div class="timeline-bento-dot"></div>
+            <div class="timeline-bento-date">2025 — 2026</div>
+            <div class="timeline-bento-title">PG Diploma in Advanced Computing (PG-DAC)</div>
+            <div class="timeline-bento-subtitle">CDAC, Noida</div>
+            <ul class="timeline-bento-desc">
+              <li>Software design, DBMS, structures, and systems course.</li>
+              <li>Completed with 72.9% aggregate.</li>
+            </ul>
+          </div>
+          <div class="timeline-bento-item">
+            <div class="timeline-bento-dot"></div>
+            <div class="timeline-bento-date">2021 — 2025</div>
+            <div class="timeline-bento-title">B.Tech in Computer Science Engineering</div>
+            <div class="timeline-bento-subtitle">Oriental Institute of Science and Technology, Bhopal</div>
+            <ul class="timeline-bento-desc">
+              <li>Business Systems focus, OOP, network architectures.</li>
+              <li>Completed with 7.41 CGPA.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- PROJECTS BENTO SECTION -->
+    <div id="projects">
+      <h2 class="section-title-bento">
+        <span>Featured Projects</span> Deployed Live
+      </h2>
+      
+      <div class="projects-filter-bento">
+        <button class="filter-btn-bento active" data-filter="all">All Items</button>
+        <button class="filter-btn-bento" data-filter="fullstack">Full-Stack & IoT</button>
+        <button class="filter-btn-bento" data-filter="creative">Creative UI</button>
+        <button class="filter-btn-bento" data-filter="landing">Landing Pages</button>
+      </div>
+
+      <div class="projects-grid-bento">
+        
+        <!-- SkillFusion -->
+        <div class="project-card-bento" data-category="fullstack">
+          <div>
+            <img src="assets/images/project-skillfusion.jpg" alt="SkillFusion" class="project-bento-img">
+            <div class="project-bento-body">
+              <div>
+                <div class="project-bento-category">Full Stack Application</div>
+                <h3 class="project-bento-title">SkillFusion — Skill Exchange</h3>
+                <p class="project-bento-desc">
+                  Peer-to-peer exchange site utilizing Spring Boot backend and React.js frontend. Features real-time sockets communication.
+                </p>
+              </div>
+              <div class="project-bento-tech">
+                <span>Spring Boot</span>
+                <span>React.js</span>
+                <span>WebRTC</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-bento-footer">
+            <a href="https://skill-fusion-ten.vercel.app" target="_blank" class="btn-bento-link highlight">Live Demo</a>
+            <a href="https://github.com/codervikasyadav/SkillFusion" target="_blank" class="btn-bento-link">GitHub</a>
+          </div>
+        </div>
+
+        <!-- IPDS -->
+        <div class="project-card-bento" data-category="fullstack">
+          <div>
+            <img src="assets/images/project-ipds.jpg" alt="IPDS" class="project-bento-img">
+            <div class="project-bento-body">
+              <div>
+                <div class="project-bento-category">IoT Integration</div>
+                <h3 class="project-bento-title">IPDS — Ration Tracking System</h3>
+                <p class="project-bento-desc">
+                  Secure monitoring dashboard for Public Distribution Systems linking physical PoS terminals directly with APIs.
+                </p>
+              </div>
+              <div class="project-bento-tech">
+                <span>Java</span>
+                <span>IoT APIs</span>
+                <span>MySQL</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-bento-footer">
+            <a href="https://ipds-inky.vercel.app" target="_blank" class="btn-bento-link highlight">Live Demo</a>
+            <a href="https://github.com/codervikasyadav/IPDS" target="_blank" class="btn-bento-link">GitHub</a>
+          </div>
+        </div>
+
+        <!-- Travel Wale Bhai Ji -->
+        <div class="project-card-bento" data-category="landing">
+          <div>
+            <img src="assets/images/project-travel.jpg" alt="Travel Wale" class="project-bento-img">
+            <div class="project-bento-body">
+              <div>
+                <div class="project-bento-category">Web Frontend</div>
+                <h3 class="project-bento-title">Travel Wale Bhai Ji</h3>
+                <p class="project-bento-desc">
+                  Tourism portal with modern cards structure, expedition packages, and filter options built for agencies.
+                </p>
+              </div>
+              <div class="project-bento-tech">
+                <span>Next.js</span>
+                <span>TypeScript</span>
+                <span>React</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-bento-footer">
+            <a href="https://vasu-bhartwal-travels.vercel.app" target="_blank" class="btn-bento-link highlight">Live Demo</a>
+            <a href="https://github.com/codervikasyadav/travelwalebhaiji" target="_blank" class="btn-bento-link">GitHub</a>
+          </div>
+        </div>
+
+        <!-- Spider Portfolio -->
+        <div class="project-card-bento" data-category="creative">
+          <div>
+            <img src="assets/images/project-spider.jpg" alt="Spider-Man theme" class="project-bento-img">
+            <div class="project-bento-body">
+              <div>
+                <div class="project-bento-category">Interactive UI</div>
+                <h3 class="project-bento-title">Spider-Man Portfolio Design</h3>
+                <p class="project-bento-desc">
+                  Creative theme switcher portfolio showcasing customized card grids inspired by superhero aesthetics.
+                </p>
+              </div>
+              <div class="project-bento-tech">
+                <span>HTML5</span>
+                <span>CSS WebFX</span>
+                <span>JS</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-bento-footer">
+            <a href="https://spider-porfolio-eight.vercel.app" target="_blank" class="btn-bento-link highlight">Live Demo</a>
+            <a href="https://github.com/codervikasyadav/spider-porfolio" target="_blank" class="btn-bento-link">GitHub</a>
+          </div>
+        </div>
+
+        <!-- Racecar -->
+        <div class="project-card-bento" data-category="creative">
+          <div>
+            <img src="assets/images/project-racecar.jpg" alt="Racecar" class="project-bento-img">
+            <div class="project-bento-body">
+              <div>
+                <div class="project-bento-category">Interactive UI</div>
+                <h3 class="project-bento-title">Concept Racecar Display</h3>
+                <p class="project-bento-desc">
+                  Sleek landing display showing custom animations, slide indicators, and modern grid structures.
+                </p>
+              </div>
+              <div class="project-bento-tech">
+                <span>HTML</span>
+                <span>CSS Variables</span>
+                <span>JS</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-bento-footer">
+            <a href="https://racecar-main.vercel.app" target="_blank" class="btn-bento-link highlight">Live Demo</a>
+            <a href="https://github.com/codervikasyadav/racecar-main" target="_blank" class="btn-bento-link">GitHub</a>
+          </div>
+        </div>
+
+        <!-- Puma -->
+        <div class="project-card-bento" data-category="creative">
+          <div>
+            <img src="assets/images/project-puma.jpg" alt="Puma Apparel" class="project-bento-img">
+            <div class="project-bento-body">
+              <div>
+                <div class="project-bento-category">Apparel Storefront</div>
+                <h3 class="project-bento-title">Puma Products Hub</h3>
+                <p class="project-bento-desc">
+                  Luxury visual storefront design exploring interactive product cards, filters, and glassmorphism headers.
+                </p>
+              </div>
+              <div class="project-bento-tech">
+                <span>HTML</span>
+                <span>Flexbox CSS</span>
+                <span>Transitions</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-bento-footer">
+            <a href="https://puma-main.vercel.app" target="_blank" class="btn-bento-link highlight">Live Demo</a>
+            <a href="https://github.com/codervikasyadav/puma-main" target="_blank" class="btn-bento-link">GitHub</a>
+          </div>
+        </div>
+
+        <!-- Light and Night -->
+        <div class="project-card-bento" data-category="creative">
+          <div>
+            <img src="assets/images/project-lightnight.jpg" alt="Theme Switch" class="project-bento-img">
+            <div class="project-bento-body">
+              <div>
+                <div class="project-bento-category">Component Design</div>
+                <h3 class="project-bento-title">Light & Night Switcher</h3>
+                <p class="project-bento-desc">
+                  Contrast theme toggle dashboard illustrating seamless variable switches and premium transitions.
+                </p>
+              </div>
+              <div class="project-bento-tech">
+                <span>JavaScript</span>
+                <span>CSS Themes</span>
+                <span>Transitions</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-bento-footer">
+            <a href="https://light-and-night-omega.vercel.app" target="_blank" class="btn-bento-link highlight">Live Demo</a>
+            <a href="https://github.com/codervikasyadav/light-and-night" target="_blank" class="btn-bento-link">GitHub</a>
+          </div>
+        </div>
+
+        <!-- Honeybee -->
+        <div class="project-card-bento" data-category="landing">
+          <div>
+            <img src="assets/images/project-honeybee.jpg" alt="Honeybee" class="project-bento-img">
+            <div class="project-bento-body">
+              <div>
+                <div class="project-bento-category">E-Commerce Concept</div>
+                <h3 class="project-bento-title">Honeybee Organic Brand</h3>
+                <p class="project-bento-desc">
+                  Nature-focused brand showcase exploring warm yellow theme designs and responsive layouts.
+                </p>
+              </div>
+              <div class="project-bento-tech">
+                <span>HTML</span>
+                <span>CSS Grid</span>
+                <span>UX Layouts</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-bento-footer">
+            <a href="https://honeybee-mu.vercel.app" target="_blank" class="btn-bento-link highlight">Live Demo</a>
+            <a href="https://github.com/codervikasyadav/honeybee" target="_blank" class="btn-bento-link">GitHub</a>
+          </div>
+        </div>
+
+        <!-- Headphone -->
+        <div class="project-card-bento" data-category="creative">
+          <div>
+            <img src="assets/images/project-headphone.jpg" alt="Headphone" class="project-bento-img">
+            <div class="project-bento-body">
+              <div>
+                <div class="project-bento-category">Visual Display</div>
+                <h3 class="project-bento-title">Headphones Glow Showcase</h3>
+                <p class="project-bento-desc">
+                  Glow-styled gadget showcase displaying key spec metrics and rich card filters.
+                </p>
+              </div>
+              <div class="project-bento-tech">
+                <span>HTML</span>
+                <span>Glow grids</span>
+                <span>Responsive</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-bento-footer">
+            <a href="https://headphone-livid.vercel.app" target="_blank" class="btn-bento-link highlight">Live Demo</a>
+            <a href="https://github.com/codervikasyadav/headphone" target="_blank" class="btn-bento-link">GitHub</a>
+          </div>
+        </div>
+
+        <!-- Food Express -->
+        <div class="project-card-bento" data-category="landing">
+          <div>
+            <img src="assets/images/project-zomtra.jpg" alt="Food delivery" class="project-bento-img">
+            <div class="project-bento-body">
+              <div>
+                <div class="project-bento-category">Web Portal</div>
+                <h3 class="project-bento-title">Food Express Portal</h3>
+                <p class="project-bento-desc">
+                  Ordering platform web view containing colorful food catalogs and simple interactive buttons.
+                </p>
+              </div>
+              <div class="project-bento-tech">
+                <span>HTML</span>
+                <span>Pure CSS</span>
+                <span>Grid</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-bento-footer">
+            <a href="https://food-delivery-website-main-eight.vercel.app" target="_blank" class="btn-bento-link highlight">Live Demo</a>
+            <a href="https://github.com/codervikasyadav/food-Delivery-website-main" target="_blank" class="btn-bento-link">GitHub</a>
+          </div>
+        </div>
+
+        <!-- Charity Website -->
+        <div class="project-card-bento" data-category="landing">
+          <div>
+            <img src="assets/images/project-charity.jpg" alt="Charity" class="project-bento-img">
+            <div class="project-bento-body">
+              <div>
+                <div class="project-bento-category">NGO Web Presentation</div>
+                <h3 class="project-bento-title">Hope Hands Foundation</h3>
+                <p class="project-bento-desc">
+                  Charitable fundraiser landing view detailing ongoing community support metrics.
+                </p>
+              </div>
+              <div class="project-bento-tech">
+                <span>HTML</span>
+                <span>CSS Grid</span>
+                <span>Visual UI</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-bento-footer">
+            <a href="https://charity-website-ruby-five.vercel.app" target="_blank" class="btn-bento-link highlight">Live Demo</a>
+            <a href="https://github.com/codervikasyadav/charity-website" target="_blank" class="btn-bento-link">GitHub</a>
+          </div>
+        </div>
+
+        <!-- School Website -->
+        <div class="project-card-bento" data-category="landing">
+          <div>
+            <img src="assets/images/project-school.jpg" alt="School" class="project-bento-img">
+            <div class="project-bento-body">
+              <div>
+                <div class="project-bento-category">Institutional Landing</div>
+                <h3 class="project-bento-title">Edustart Academy Portal</h3>
+                <p class="project-bento-desc">
+                  School portal homepage highlighting student coursework grids and admission schedules.
+                </p>
+              </div>
+              <div class="project-bento-tech">
+                <span>JavaScript</span>
+                <span>CSS</span>
+                <span>Responsive</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-bento-footer">
+            <a href="https://school-wesbite.vercel.app" target="_blank" class="btn-bento-link highlight">Live Demo</a>
+            <a href="https://github.com/codervikasyadav/school-wesbite" target="_blank" class="btn-bento-link">GitHub</a>
+          </div>
+        </div>
+
+        <!-- Smart Irrigation -->
+        <div class="project-card-bento" data-category="fullstack">
+          <div>
+            <img src="assets/images/project-irrigation.jpg" alt="Smart Irrigation" class="project-bento-img">
+            <div class="project-bento-body">
+              <div>
+                <div class="project-bento-category">IoT & Automation</div>
+                <h3 class="project-bento-title">Smart Irrigation Controller</h3>
+                <p class="project-bento-desc">
+                  IoT system for moisture tracking, utilizing connected controllers to trigger soil watering.
+                </p>
+              </div>
+              <div class="project-bento-tech">
+                <span>IoT Sensors</span>
+                <span>Node Controller</span>
+                <span>JS</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-bento-footer">
+            <a href="https://github.com/codervikasyadav/Smart-Irrigation-System" target="_blank" class="btn-bento-link highlight">GitHub Repo</a>
+          </div>
+        </div>
+
+        <!-- Fruits Juice -->
+        <div class="project-card-bento" data-category="landing">
+          <div>
+            <img src="assets/images/project-fruits.jpg" alt="Fruits Juice" class="project-bento-img">
+            <div class="project-bento-body">
+              <div>
+                <div class="project-bento-category">Landing Pages</div>
+                <h3 class="project-bento-title">Tropical Sips Landing</h3>
+                <p class="project-bento-desc">
+                  Fresh juices product showcase with vibrant pop designs and dynamic scroll interactions.
+                </p>
+              </div>
+              <div class="project-bento-tech">
+                <span>HTML</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-bento-footer">
+            <a href="https://fruits-juice.vercel.app" target="_blank" class="btn-bento-link highlight">Live Demo</a>
+            <a href="https://github.com/codervikasyadav/fruits-juice" target="_blank" class="btn-bento-link">GitHub</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- GITHUB GRID SECTION -->
+    <h2 class="section-title-bento" style="margin-top: 50px;">
+      <span>GitHub Repository</span> Directory
+    </h2>
+    <div class="github-grid-bento">
+      
+      <!-- Card 1 -->
+      <a href="https://github.com/codervikasyadav/SkillFusion" target="_blank" class="github-bento-card">
+        <div class="github-bento-header">
+          <i class="fab fa-github"></i>
+          <span class="github-bento-name">SkillFusion</span>
+        </div>
+        <p class="github-bento-desc">Spring Boot backend and React.js frontend skill exchange platform.</p>
+        <div class="github-bento-footer">
+          <div class="github-lang">
+            <span class="github-dot" style="background: #f1e05a;"></span> JavaScript
+          </div>
+        </div>
+      </a>
+
+      <!-- Card 2 -->
+      <a href="https://github.com/codervikasyadav/IPDS" target="_blank" class="github-bento-card">
+        <div class="github-bento-header">
+          <i class="fab fa-github"></i>
+          <span class="github-bento-name">IPDS</span>
+        </div>
+        <p class="github-bento-desc">Integrated Public Distribution System (IoT terminal communication API).</p>
+        <div class="github-bento-footer">
+          <div class="github-lang">
+            <span class="github-dot" style="background: #b07219;"></span> Java
+          </div>
+        </div>
+      </a>
+
+      <!-- Card 3 -->
+      <a href="https://github.com/codervikasyadav/travelwalebhaiji" target="_blank" class="github-bento-card">
+        <div class="github-bento-header">
+          <i class="fab fa-github"></i>
+          <span class="github-bento-name">travelwalebhaiji</span>
+        </div>
+        <p class="github-bento-desc">Travel Wale Bhai Ji agency web frontend page using Next.js.</p>
+        <div class="github-bento-footer">
+          <div class="github-lang">
+            <span class="github-dot" style="background: #3178c6;"></span> TypeScript
+          </div>
+        </div>
+      </a>
+
+      <!-- Card 4 -->
+      <a href="https://github.com/codervikasyadav/ZOMTRA" target="_blank" class="github-bento-card">
+        <div class="github-bento-header">
+          <i class="fab fa-github"></i>
+          <span class="github-bento-name">ZOMTRA</span>
+        </div>
+        <p class="github-bento-desc">Food ordering application with user dashboard lists.</p>
+        <div class="github-bento-footer">
+          <div class="github-lang">
+            <span class="github-dot" style="background: #3178c6;"></span> TypeScript
+          </div>
+        </div>
+      </a>
+
+      <!-- Card 5 -->
+      <a href="https://github.com/codervikasyadav/Smart-Irrigation-System" target="_blank" class="github-bento-card">
+        <div class="github-bento-header">
+          <i class="fab fa-github"></i>
+          <span class="github-bento-name">Smart-Irrigation</span>
+        </div>
+        <p class="github-bento-desc">IoT smart irrigation automation files & connected setups.</p>
+        <div class="github-bento-footer">
+          <div class="github-lang">
+            <span class="github-dot" style="background: #f1e05a;"></span> JavaScript
+          </div>
+        </div>
+      </a>
+
+      <!-- Card 6 -->
+      <a href="https://github.com/codervikasyadav/himalayan-ranges" target="_blank" class="github-bento-card">
+        <div class="github-bento-header">
+          <i class="fab fa-github"></i>
+          <span class="github-bento-name">himalayan-ranges</span>
+        </div>
+        <p class="github-bento-desc">Beautiful trek destinations presentation landing views.</p>
+        <div class="github-bento-footer">
+          <div class="github-lang">
+            <span class="github-dot" style="background: #563d7c;"></span> CSS
+          </div>
+        </div>
+      </a>
+
+      <!-- Card 7 -->
+      <a href="https://github.com/codervikasyadav/date-spark" target="_blank" class="github-bento-card">
+        <div class="github-bento-header">
+          <i class="fab fa-github"></i>
+          <span class="github-bento-name">date-spark</span>
+        </div>
+        <p class="github-bento-desc">Calendar component date selector templates in TypeScript.</p>
+        <div class="github-bento-footer">
+          <div class="github-lang">
+            <span class="github-dot" style="background: #3178c6;"></span> TypeScript
+          </div>
+        </div>
+      </a>
+
+      <!-- Card 8 -->
+      <a href="https://github.com/codervikasyadav/spider-porfolio" target="_blank" class="github-bento-card">
+        <div class="github-bento-header">
+          <i class="fab fa-github"></i>
+          <span class="github-bento-name">spider-porfolio</span>
+        </div>
+        <p class="github-bento-desc">Spider-Man concept dashboard portfolio layout.</p>
+        <div class="github-bento-footer">
+          <div class="github-lang">
+            <span class="github-dot" style="background: #f1e05a;"></span> JavaScript
+          </div>
+        </div>
+      </a>
+
+    </div>
+
+    <!-- CONTACT BENTO GRID -->
+    <div class="bento-grid-contact" id="contact">
+      
+      <!-- Contact Info Card -->
+      <div class="bento-card card-contact-info">
+        <div>
+          <div class="card-title-bento">
+            <i class="fas fa-paper-plane"></i> Let's Connect
+          </div>
+          <p style="font-size: 0.82rem; color: var(--text-secondary);">
+            Open for software engineering opportunities, internships, and technical collaborations. Send a message!
+          </p>
+        </div>
+        <div class="contact-bento-list">
+          
+          <div class="contact-bento-item">
+            <div class="contact-bento-icon"><i class="fas fa-envelope"></i></div>
+            <div class="contact-bento-details">
+              <div class="label">Email Address</div>
+              <div class="val">vikasyadavofficial56@gmail.com</div>
+            </div>
+          </div>
+
+          <div class="contact-bento-item">
+            <div class="contact-bento-icon"><i class="fas fa-phone-alt"></i></div>
+            <div class="contact-bento-details">
+              <div class="label">Phone Line</div>
+              <div class="val">+91 9111569222</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Contact Form Card -->
+      <div class="bento-card card-contact-form">
+        <div class="card-title-bento">
+          <i class="fas fa-envelope-open"></i> Drop a Line
+        </div>
+        <form class="contact-bento-form" onsubmit="handleFormSubmit(event)">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="John Doe" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="john@example.com" required>
+          </div>
+          <div class="form-group full">
+            <label for="message">Message Details</label>
+            <textarea id="message" placeholder="Project details or interview request..." required></textarea>
+          </div>
+          <button type="submit" class="btn-bento-submit">
+            <i class="fas fa-paper-plane"></i> Deliver Message
+          </button>
+        </form>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <p>© 2026 Vikas Yadav. Built with <span>♥</span> & Bento Grids for Recruitment Attraction.</p>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top" style="display: none;"></button>
+
+  <script src="script.js"></script>
+</body>
+</html>
